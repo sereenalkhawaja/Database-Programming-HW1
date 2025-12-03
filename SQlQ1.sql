@@ -5,7 +5,7 @@
 CREATE DATABASE employeeeDB;
 GO
 
--- Use the database
+
 USE employeeeDB;
 GO
 
@@ -43,4 +43,5 @@ CREATE TABLE manages (
     PRIMARY KEY (ID, manager_id),
     FOREIGN KEY (ID) REFERENCES employee(ID),
     FOREIGN KEY (manager_id) REFERENCES employee(ID)
+
 );
